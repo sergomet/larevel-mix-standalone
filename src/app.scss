@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+$font-family-sans-serif: "Lato", sans-serif !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+
+$theme-colors: (
+  "primary": #ee002d
+);
+
+$costal-breeze: #dff9fb;
+
+.bg-costal-breeze {
+  background-color: $costal-breeze;
+}
+
+.logo {
+  font-size: 40px;
+  a,
+  a:hover,
+  a:active,
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+// Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
